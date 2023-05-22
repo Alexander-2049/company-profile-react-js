@@ -1,0 +1,25 @@
+:root {
+    font-family: 'Asap', 'Satoshi-Variable', Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    line-height: 1;
+    font-weight: 400;
+    font-size: 16px;
+  
+    /* color-scheme: light dark; */
+    color: var(--c-text-p);
+    background-color: var(--c-background);
+  
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-text-size-adjust: 100%;
+}
+
+a {
+    color: #383838;
+    text-decoration: none;
+}
+
+body {
+    min-width: 320px;
+}

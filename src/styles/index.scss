@@ -16,8 +16,11 @@
 }
 
 a {
-    color: #383838;
-    text-decoration: none;
+    color: var(--c-a);
+
+    &:hover {
+        color: var(--c-a-hover);
+    }
 }
 
 body {

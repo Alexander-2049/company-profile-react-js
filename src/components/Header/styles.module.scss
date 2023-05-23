@@ -1,0 +1,119 @@
+@media only screen and (max-width: 1110px) {
+    .wrapper {
+        padding: 16px;
+    }
+}
+
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    min-height: 99px;
+    font-family: 'Inter';
+    padding: 0 150px;
+    position: relative;
+}
+
+.left {
+    .logo {
+        text-decoration: none;
+        font-size: 24px;
+        font-weight: 900;
+        color: var(--c-a-active);
+    }
+}
+
+@media only screen and (max-width: 1110px) {
+    .wrapper {
+        padding: 16px;
+    }
+}
+
+ul.links {
+    list-style: none;
+
+    li {
+        display: inline-block;
+        margin-right: 40px;
+        font-size: 16px;
+        &:last-child {
+            margin-right: 0;
+        }
+
+        a {
+            font-weight: 400;
+            text-decoration: none;
+            &.active {
+                font-weight: 700;
+                color: var(--c-a-active);
+            }
+        }
+    }
+}
+
+.BurgerMenu_Button {
+    display: none;
+}
+
+ul.burgerLinks {
+    list-style: none;
+
+    .logo {
+        text-decoration: none;
+        font-size: 24px;
+        font-weight: 900;
+        color: var(--c-background);
+    }
+
+    li {
+        display: block;
+        font-size: 24px;
+        margin: 8px 16px;
+
+        .active {
+            color: #fff;
+        }
+    }
+}
+
+@media only screen and (max-width: 830px) {
+    ul.links li {
+        margin-right: 16px;
+    }
+}
+
+@media only screen and (max-width: 720px) {
+    .left {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 540px) {
+    .center {
+        display: none;
+    }
+    .BurgerMenu_Button {
+        display: block;
+    }
+    .left {
+        display: block;
+    }
+    .right {
+        display: none;
+    }
+}
+
+.bttn_letsTalk {
+    text-decoration: none;
+    padding: 16px 32px;
+    color: var(--c-a-active);
+    border-radius: 32px;
+    border: 1px solid var(--c-a-active);
+    font-weight: 500;
+
+    &:hover {
+        background-color: var(--c-a-active);
+        color: var(--c-a-active-inverted)
+    }
+}

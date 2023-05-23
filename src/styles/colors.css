@@ -6,6 +6,9 @@
     --c-text-h3: #202020;
     --c-accent: #0041E8;
     --c-background: #FFFFFF;
+    --c-background-inverted: #000000;
     --c-a: #A7ABB6;
     --c-a-active: #383838;
+    --c-a-hover: #383838;
+    --c-a-active-inverted: #FFFFFF;
 }

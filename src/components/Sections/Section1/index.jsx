@@ -64,6 +64,15 @@ const Section1 = () => {
                     </div>
 
             </div>
+            
+            <ul className={styles.list}>
+                <li>UI/UX Design</li>
+                <li>Prototype</li>
+                <li>Web Design</li>
+                <li>Landing Page</li>
+                <li>Mobile Design</li>
+                <li>Development</li>
+            </ul>
         </section>
     );
 };

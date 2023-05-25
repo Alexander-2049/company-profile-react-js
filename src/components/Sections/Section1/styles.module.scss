@@ -5,6 +5,7 @@ section.wrapper {
     margin-top: 83px;
     align-items: center;
     position: relative;
+    overflow-x: hidden;
 }
 
 .pointer {
@@ -153,7 +154,7 @@ div.imageRight {
 //         display: none;
 //     }
 // }
-@media only screen and (max-width: 1250px) {
+@media only screen and (max-width: 750px) {
     div.imagesWrapper {
         display: none;
     }
@@ -163,6 +164,11 @@ div.titleWrapper {
     display: block;
     position: relative;
     max-width: 752px;
+}
+@media only screen and (max-width: 1170px) {
+    div.titleWrapper {
+        max-width: 600px;
+    }
 }
 
 div.text {
@@ -184,7 +190,7 @@ div.text {
         margin-left: auto;
         margin-right: auto;
     }
-    @media only screen and (max-width: 700px) {
+    @media only screen and (max-width: 1170px) {
         h1.title {
             font-size: 52px;
         }

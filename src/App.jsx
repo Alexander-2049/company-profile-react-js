@@ -6,8 +6,10 @@ function App() {
 
   return (
     <div>
+      <div id="page1">
       <Section1/>
       <Section2/>
+      </div>
       <Section3/>
     </div>
   )

@@ -170,6 +170,11 @@ div.titleWrapper {
         max-width: 600px;
     }
 }
+@media only screen and (max-width: 920px) {
+    div.titleWrapper {
+        max-width: 420px;
+    }
+}
 
 div.text {
     font-family: 'Satoshi-Variable', Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
@@ -264,5 +269,10 @@ ul.list {
             text-align: center;
             margin: 0;
         }
+    }
+}
+@media only screen and (max-width: 420px) {
+    ul.list li {
+        width: 50%;
     }
 }

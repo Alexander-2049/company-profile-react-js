@@ -1,4 +1,3 @@
-import React from 'react';
 import styles from './styles.module.scss';
 import svg_pointer1 from '../../../assets/Vector 587.svg';
 import svg_pointer2 from '../../../assets/Vector 588.svg';

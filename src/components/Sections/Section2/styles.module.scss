@@ -15,6 +15,8 @@ div.socials {
     justify-content: center;
     align-items: center;
     margin-top: 40px;
+    margin-bottom: 80px;
+    gap: 24px;
 
     a {
         display: flex;
@@ -31,8 +33,33 @@ div.socials {
             background-color: #bec1ca;
         }
     }
+}
 
-    a + a {
-        margin-left: 24px;
+div.trustedPartner {
+
+    span.title {
+        display: block;
+        font-family: 'Asap', 'Satoshi-Variable', Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+        font-size: 16px;
+        margin-bottom: 21px;
+        color: #A7ABB6;
+        text-align: center;
+        font-weight: 400;
+    }
+
+    div.logos {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 24px;
+
+        div.logo_wrapper {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 170px;
+            height: 59px;
+        }
     }
 }

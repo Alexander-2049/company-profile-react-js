@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
 import getCopyrightText from '../../utils/getCopyrightText';
 import styles from './styles.module.scss'
+import PropTypes from 'prop-types';
 
 const BurgerMenu = (props) => {
     const { children, isOpen, setIsOpen } = props;
@@ -19,6 +19,12 @@ const BurgerMenu = (props) => {
             </div>
         </>
     );
+};
+
+BurgerMenu.propTypes = {
+    children: PropTypes.node.isRequired,
+    isOpen: PropTypes.bool.isRequired,
+    setIsOpen: PropTypes.func.isRequired
 };
 
 export default BurgerMenu;

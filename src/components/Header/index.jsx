@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import BurgerMenu from '../BurgerMenu';
 import BurgerMenu_Button from '../BurgerMenu/Button';
 import styles from './styles.module.scss'
@@ -35,7 +35,7 @@ const Header = () => {
                 </ul>
             </div>
             <div className={styles.right}>
-                <a className={styles.bttn_letsTalk} href="#">Let's Talk</a>
+                <a className={styles.bttn_letsTalk} href="#">{`Let's Talk`}</a>
             </div>
         </header>
         </>

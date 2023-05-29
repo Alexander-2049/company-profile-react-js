@@ -30,3 +30,8 @@ span {
 body {
     min-width: 320px;
 }
+
+.mw {
+    max-width: calc(1142px + 24px);
+    padding: calc(24px / 2);
+}

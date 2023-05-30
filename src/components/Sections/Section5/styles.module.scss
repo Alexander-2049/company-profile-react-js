@@ -1,0 +1,136 @@
+section.wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 120px;
+}
+
+div.title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    max-width: 558px;
+    text-align: center;
+    margin-bottom: 40px;
+    
+    h2 {
+        margin-top: 16px;
+        margin-bottom: 24px;
+    }
+
+    p {
+        line-height: 28px;
+    }
+}
+
+div.posters {
+    // display: flex;
+    // align-items: center;
+    // justify-content: center;
+    // flex-direction: row;
+
+    
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+    grid-gap: 1rem;
+
+    gap: 24px;
+    margin-bottom: 40px;
+    width: 100%;
+    flex-wrap: wrap;
+    overflow: hidden;
+    
+    .left, .right {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 24px;
+        height: 558px;
+        flex-grow: 1;
+        min-width: 450px;
+        position: relative;
+
+        .bottom {
+            position: absolute;
+            padding: 20px;
+            bottom: 0;
+        }
+
+        h2 {
+            color: #ffffff;
+            font-size: 24px;
+            font-family: 'Satoshi-Variable', Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+        }
+        p {
+            font-size: 16px;
+            color: #D1D4DC;
+        }
+    }
+    
+    .left {
+        overflow: hidden;
+        border-radius: 24px;
+        background-color: black;
+        background-position: center;
+        background-size: cover;
+        width: 100%;
+        position: relative;
+        display: flex;
+        align-items: flex-end;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 40px 24px;
+
+
+
+        .bottomRight {
+            flex-shrink: 0;
+
+            a {
+                text-decoration: none;
+                padding: 16px 32px;
+                color: #ffffff;
+                border-radius: 32px;
+                border: 1px solid #ffffff;
+                font-weight: 500;
+                display: inline-block;
+            
+                &:hover {
+                    background-color: #ffffff;
+                    color: #000000;
+                }
+            }
+        }
+    }
+    
+    .right {
+        div.textBoxWrapper {
+            overflow: hidden;
+            border-radius: 24px;
+            background-color: black;
+            flex-grow: 1;
+            width: 100%;
+            background-size: cover;
+            position: relative;
+            background-position: center;
+        }
+    }
+
+    @media only screen and (max-width: 600px) {
+        .left, .right {
+            min-width: 100%;
+            height: auto;
+        }
+        .left {
+            aspect-ratio: 4 / 3;
+        }
+        .right div {
+            aspect-ratio: 4 / 3;
+        }
+    }
+}

@@ -34,6 +34,7 @@ body {
 .mw {
     max-width: calc(1142px + 24px);
     padding: calc(24px / 2);
+    margin: 0 auto;
 }
 
 #page1 {
@@ -42,4 +43,10 @@ body {
     justify-content: center;
     align-items: center;
     min-height: calc(100vh - 140px);
+}
+
+h2 {
+    font-family: 'Satoshi-Variable', Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    font-size: 40px;
+    color: var(--c-text-h2);
 }

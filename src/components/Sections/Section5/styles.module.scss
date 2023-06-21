@@ -35,7 +35,7 @@ div.posters {
 
     
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     grid-gap: 1rem;
 
     gap: 24px;
@@ -43,6 +43,8 @@ div.posters {
     width: 100%;
     flex-wrap: wrap;
     overflow: hidden;
+
+    text-shadow: 1px 1px 4px rgb(0, 0, 0), 0 0 2em rgb(0, 0, 0), 0 0 2em rgb(0, 0, 0);
     
     .left, .right {
         display: flex;
@@ -52,14 +54,14 @@ div.posters {
         gap: 24px;
         height: 558px;
         flex-grow: 1;
-        min-width: 450px;
+        min-width: 250px;
         position: relative;
 
-        .bottom {
-            position: absolute;
-            padding: 20px;
-            bottom: 0;
-        }
+        // .bottom {
+        //     position: absolute;
+        //     padding: 20px;
+        //     bottom: 0;
+        // }
 
         h2 {
             color: #ffffff;
@@ -86,8 +88,6 @@ div.posters {
         justify-content: space-between;
         padding: 40px 24px;
 
-
-
         .bottomRight {
             flex-shrink: 0;
 
@@ -103,6 +103,7 @@ div.posters {
                 &:hover {
                     background-color: #ffffff;
                     color: #000000;
+                    text-shadow: none;
                 }
             }
         }
@@ -118,19 +119,25 @@ div.posters {
             background-size: cover;
             position: relative;
             background-position: center;
+
+            display: flex;
+            align-items: flex-end;
+            flex-direction: row;
+            justify-content: space-between;
+            padding: 40px 24px;
         }
     }
 
     @media only screen and (max-width: 600px) {
         .left, .right {
             min-width: 100%;
-            height: auto;
+            height: max-content;
         }
-        .left {
-            aspect-ratio: 4 / 3;
-        }
-        .right div {
-            aspect-ratio: 4 / 3;
-        }
+        // .left {
+        //     aspect-ratio: 4 / 3;
+        // }
+        // .right div {
+        //     aspect-ratio: 4 / 3;
+        // }
     }
 }
